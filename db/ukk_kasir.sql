@@ -174,15 +174,15 @@ INSERT INTO `transaksi_log` (`id`, `id_transaksi`, `barang_dijual`, `aktivitas`,
 -- Struktur dari tabel `transaksi_produk`
 --
 
-CREATE TABLE `transaksi_produk` (
-  `id` int(11) NOT NULL,
-  `id_transaksi` int(11) NOT NULL,
-  `nama_produk` varchar(255) NOT NULL,
-  `harga_produk` decimal(10,2) NOT NULL,
-  `jumlah` int(11) NOT NULL,
-  `kode_unik` varchar(50) NOT NULL,
-  `total_harga` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CREATE TABLE `transaksi_produk` (
+    `id` int(11) NOT NULL,
+    `id_transaksi` int(11) NOT NULL,
+    `nama_produk` varchar(255) NOT NULL,
+    `harga_produk` decimal(10,2) NOT NULL,
+    `jumlah` int(11) NOT NULL,
+    `kode_unik` varchar(50) NOT NULL,
+    `total_harga` decimal(10,2) NOT NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
